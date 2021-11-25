@@ -4,6 +4,7 @@ if testcases == 0
 end
 
 
+
 (1..testcases).each { ||
   min_results = []
   max_results = []
