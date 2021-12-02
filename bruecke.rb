@@ -39,7 +39,7 @@ testcases = gets.to_i
   edges.sort_by! { |p| p.e }
   weight = 0
   edges.each do |e|
-    if !(find(un, e.u) == find(un, e.v))
+    unless find(un,   e.u) == find(un, e.v)
       weight += e.e
       union un, e.u, e.v
     end
